@@ -67,9 +67,9 @@ func main() {
 	problem := *problemPtr
 
 	switch problem {
-	case "problem1":
+	case "1":
 		problem1()
-	case "problem2":
+	case "2":
 		problem2()
 	default:
 		problem1()
