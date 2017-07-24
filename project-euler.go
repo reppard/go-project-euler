@@ -36,8 +36,7 @@ func problem2() {
 
 	printBorderedMsg(message)
 
-	sum := 0
-	x, y := 1, 1
+	sum, x, y := 0, 1, 1
 
 	for y < 4000000 {
 		z := x + y
@@ -46,8 +45,7 @@ func problem2() {
 			sum += z
 		}
 
-		x = y
-		y = z
+		x, y = y, z
 	}
 
 	fmt.Printf("Answer: %d\n", sum)

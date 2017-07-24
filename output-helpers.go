@@ -9,7 +9,7 @@ const borderString = "//"
 func printBorderedMsg(message []string) {
 	printBar()
 	for i := 0; i < len(message); i++ {
-		fmt.Println(borderString, " ", message[i])
+		fmt.Println(borderString, message[i])
 	}
 	printBar()
 	fmt.Println("\n")
